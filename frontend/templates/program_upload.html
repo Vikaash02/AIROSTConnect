@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
 <div class="program-upload-container">
     <h1>Upload New Program</h1>
@@ -9,6 +8,50 @@
             <label for="title">Program Title:</label>
             <input type="text" id="title" name="title" required>
         </div>
-
         <div class="form-group">
-            <label
+            <label for="platform">Platform:</label>
+            <select id="platform" name="platform" required>
+                <option value="online">Online</option>
+                <option value="face-to-face">Face-to-Face</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="datetime">Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+        </div>
+        <div class="form-group">
+            <label for="registration">Registration Method:</label>
+            <input type="text" id="registration" name="registration" required>
+        </div>
+        <div class="form-group">
+            <label>Categories (select all that apply):</label>
+            <div class="category-checkboxes">
+                <label>
+                    <input type="checkbox" name="categories" value="machine-learning"> Machine Learning
+                </label>
+                <label>
+                    <input type="checkbox" name="categories" value="robotics"> Robotics
+                </label>
+                <label>
+                    <input type="checkbox" name="categories" value="data-science"> Data Science
+                </label>
+                <label>
+                    <input type="checkbox" name="categories" value="ai"> Artificial Intelligence
+                </label>
+                <label>
+                    <input type="checkbox" name="categories" value="web-development"> Web Development
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description">Program Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="link">Registration Link (optional):</label>
+            <input type="url" id="link" name="link">
+        </div>
+        <button type="submit" class="btn-upload">Upload Program</button>
+    </form>
+</div>
+{% endblock %}
