@@ -12,8 +12,8 @@ This is a Python-based web application for recommending programs based on user i
 
 ### 1. Clone the Repository
 ```bash
-git clone https://your-repo-url.git
-cd ai-recommendation-system
+git clone [https://your-repo-url.git](https://github.com/Vikaash02/AIROSTConnect.git)
+cd AIROSTConnect
 ```
 
 ### 2. Create Virtual Environment
